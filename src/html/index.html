@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Due Date Backend</title>
+</head>
+<body>
+    <section>
+    <h1>Assignment Due Date (Backend)</h1>
+    <p>On this page, you will find a short description of available endpoints.</p>
+    </section>
+    <section>
+        <h4>GET Requests</h4>
+        <ul>
+            <li>
+                To retrieve all modules - <u>/api/modules</u>
+                <p><b>Returns</b> an array of objects that will contain all modules</p>
+                <p><b>Module properties</b>:"_id" , "name", "image_link", "code"</b></p>
+           </li>
+           <li>
+            To retrieve all assignments - <u>/api/tasks</u> 
+            <p><b>Returns</b> an array of objects with assignments</p>
+                <p><b>Task properties</b>:"_id" , "name", "setdate", "duedate", "finaldeadline", "modulecode"</b></p> 
+            </li>
+            <li>
+                To retrieve all assignments filltered by module - <u>/api/tasks/{modulecode}</u> 
+                <p><b>Returns</b> an array of objects with assignments</p>
+                <p><b>Task properties</b>:"_id" , "name", "setdate", "duedate", "finaldeadline", "modulecode"</b></p> </li>
+        </ul>
+    </section>
+</body>
+
+</html>

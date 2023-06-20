@@ -6,16 +6,22 @@ const moduleSchema = new mongoose.Schema(
         type: String,
         require: true,
      },
-     code:{
-        type: String,
-        validate(value) {
-            if(value.lenght < 6){
-                throw new Error("Module code should be more than 6 characters")
-            }
-        }
+     image_link:{
+        type:String,
      },
-    
-    }
+     code:{
+        type:String
+     },
+     level:{
+        type:Number
+     },
+     moduleleader:{
+        type:String
+     }
+    } 
 )
 const Module = mongoose.model('Module',moduleSchema)
 module.exports = Module;
+
+
+
